@@ -1,0 +1,878 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E016934B1BFDC11900C9E06A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E016934A1BFDC11900C9E06A /* main.m */; };
+		E016934E1BFDC11900C9E06A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E016934D1BFDC11900C9E06A /* AppDelegate.m */; };
+		E01693541BFDC11900C9E06A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E01693521BFDC11900C9E06A /* Main.storyboard */; };
+		E01693571BFDC11900C9E06A /* wireless_scan_B_mode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E01693551BFDC11900C9E06A /* wireless_scan_B_mode.xcdatamodeld */; };
+		E01693591BFDC11900C9E06A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E01693581BFDC11900C9E06A /* Assets.xcassets */; };
+		E016935C1BFDC11900C9E06A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E016935A1BFDC11900C9E06A /* LaunchScreen.storyboard */; };
+		E01693671BFDC11900C9E06A /* wireless_scan_B_modeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E01693661BFDC11900C9E06A /* wireless_scan_B_modeTests.m */; };
+		E01693721BFDC11900C9E06A /* wireless_scan_B_modeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E01693711BFDC11900C9E06A /* wireless_scan_B_modeUITests.m */; };
+		E01693811BFDC33500C9E06A /* myView.m in Sources */ = {isa = PBXBuildFile; fileRef = E01693801BFDC33500C9E06A /* myView.m */; settings = {ASSET_TAGS = (); }; };
+		E01693841BFDC3DE00C9E06A /* CustomSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = E01693831BFDC3DE00C9E06A /* CustomSlider.m */; settings = {ASSET_TAGS = (); }; };
+		E01693871BFDC45C00C9E06A /* CustomImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E01693861BFDC45C00C9E06A /* CustomImagePickerViewController.m */; settings = {ASSET_TAGS = (); }; };
+		E016938A1BFDC4AB00C9E06A /* RawImag.m in Sources */ = {isa = PBXBuildFile; fileRef = E01693891BFDC4AB00C9E06A /* RawImag.m */; settings = {ASSET_TAGS = (); }; };
+		E01693921BFDC6CC00C9E06A /* TransSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E01693901BFDC6CC00C9E06A /* TransSocket.cpp */; settings = {ASSET_TAGS = (); }; };
+		E01693951BFDC78400C9E06A /* DSCor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E01693931BFDC78400C9E06A /* DSCor.cpp */; settings = {ASSET_TAGS = (); }; };
+		E01693C11BFDC8A800C9E06A /* 底部滑块_滑块@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693981BFDC8A800C9E06A /* 底部滑块_滑块@2x.png */; settings = {ASSET_TAGS = (); }; };
+		E01693C21BFDC8A800C9E06A /* 底部滑块_进度条@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693991BFDC8A800C9E06A /* 底部滑块_进度条@2x.png */; settings = {ASSET_TAGS = (); }; };
+		E01693C31BFDC8A800C9E06A /* 放大按钮@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E016939A1BFDC8A800C9E06A /* 放大按钮@2x.png */; settings = {ASSET_TAGS = (); }; };
+		E01693C41BFDC8A800C9E06A /* 分割线.png in Resources */ = {isa = PBXBuildFile; fileRef = E016939B1BFDC8A800C9E06A /* 分割线.png */; settings = {ASSET_TAGS = (); }; };
+		E01693C51BFDC8A800C9E06A /* 加载页.png in Resources */ = {isa = PBXBuildFile; fileRef = E016939C1BFDC8A800C9E06A /* 加载页.png */; settings = {ASSET_TAGS = (); }; };
+		E01693C61BFDC8A800C9E06A /* 渐变.png in Resources */ = {isa = PBXBuildFile; fileRef = E016939D1BFDC8A800C9E06A /* 渐变.png */; settings = {ASSET_TAGS = (); }; };
+		E01693C71BFDC8A800C9E06A /* 刻度.png in Resources */ = {isa = PBXBuildFile; fileRef = E016939E1BFDC8A800C9E06A /* 刻度.png */; settings = {ASSET_TAGS = (); }; };
+		E01693C81BFDC8A800C9E06A /* 刻度黑.png in Resources */ = {isa = PBXBuildFile; fileRef = E016939F1BFDC8A800C9E06A /* 刻度黑.png */; settings = {ASSET_TAGS = (); }; };
+		E01693C91BFDC8A800C9E06A /* 缩小按钮@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693A01BFDC8A800C9E06A /* 缩小按钮@2x.png */; settings = {ASSET_TAGS = (); }; };
+		E01693CA1BFDC8A800C9E06A /* 右侧滑块_凹槽.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693A11BFDC8A800C9E06A /* 右侧滑块_凹槽.png */; settings = {ASSET_TAGS = (); }; };
+		E01693CB1BFDC8A800C9E06A /* 右侧滑块_滑块@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693A21BFDC8A800C9E06A /* 右侧滑块_滑块@2x.png */; settings = {ASSET_TAGS = (); }; };
+		E01693CC1BFDC8A800C9E06A /* 右侧滑块_进度条.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693A31BFDC8A800C9E06A /* 右侧滑块_进度条.png */; settings = {ASSET_TAGS = (); }; };
+		E01693CD1BFDC8A800C9E06A /* bg_底部.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693A41BFDC8A800C9E06A /* bg_底部.png */; settings = {ASSET_TAGS = (); }; };
+		E01693CE1BFDC8A800C9E06A /* bg_顶部.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693A51BFDC8A800C9E06A /* bg_顶部.png */; settings = {ASSET_TAGS = (); }; };
+		E01693CF1BFDC8A800C9E06A /* bg_整屏.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693A61BFDC8A800C9E06A /* bg_整屏.png */; settings = {ASSET_TAGS = (); }; };
+		E01693D01BFDC8A800C9E06A /* btn_保存_dis.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693A71BFDC8A800C9E06A /* btn_保存_dis.png */; settings = {ASSET_TAGS = (); }; };
+		E01693D11BFDC8A800C9E06A /* btn_保存_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693A81BFDC8A800C9E06A /* btn_保存_nor.png */; settings = {ASSET_TAGS = (); }; };
+		E01693D21BFDC8A800C9E06A /* btn_保存_pre.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693A91BFDC8A800C9E06A /* btn_保存_pre.png */; settings = {ASSET_TAGS = (); }; };
+		E01693D31BFDC8A800C9E06A /* btn_播放_dis.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693AA1BFDC8A800C9E06A /* btn_播放_dis.png */; settings = {ASSET_TAGS = (); }; };
+		E01693D41BFDC8A800C9E06A /* btn_播放_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693AB1BFDC8A800C9E06A /* btn_播放_nor.png */; settings = {ASSET_TAGS = (); }; };
+		E01693D51BFDC8A800C9E06A /* btn_播放_pre.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693AC1BFDC8A800C9E06A /* btn_播放_pre.png */; settings = {ASSET_TAGS = (); }; };
+		E01693D61BFDC8A800C9E06A /* btn_开启_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693AD1BFDC8A800C9E06A /* btn_开启_nor.png */; settings = {ASSET_TAGS = (); }; };
+		E01693D71BFDC8A800C9E06A /* btn_开启_pre.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693AE1BFDC8A800C9E06A /* btn_开启_pre.png */; settings = {ASSET_TAGS = (); }; };
+		E01693D81BFDC8A800C9E06A /* btn_上一个_dis.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693AF1BFDC8A800C9E06A /* btn_上一个_dis.png */; settings = {ASSET_TAGS = (); }; };
+		E01693D91BFDC8A800C9E06A /* btn_上一个_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693B01BFDC8A800C9E06A /* btn_上一个_nor.png */; settings = {ASSET_TAGS = (); }; };
+		E01693DA1BFDC8A800C9E06A /* btn_上一个_pre.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693B11BFDC8A800C9E06A /* btn_上一个_pre.png */; settings = {ASSET_TAGS = (); }; };
+		E01693DB1BFDC8A800C9E06A /* btn_设置_dis.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693B21BFDC8A800C9E06A /* btn_设置_dis.png */; settings = {ASSET_TAGS = (); }; };
+		E01693DC1BFDC8A800C9E06A /* btn_设置_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693B31BFDC8A800C9E06A /* btn_设置_nor.png */; settings = {ASSET_TAGS = (); }; };
+		E01693DD1BFDC8A800C9E06A /* btn_设置_pre.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693B41BFDC8A800C9E06A /* btn_设置_pre.png */; settings = {ASSET_TAGS = (); }; };
+		E01693DE1BFDC8A800C9E06A /* btn_图像浏览_dis.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693B51BFDC8A800C9E06A /* btn_图像浏览_dis.png */; settings = {ASSET_TAGS = (); }; };
+		E01693DF1BFDC8A800C9E06A /* btn_图像浏览_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693B61BFDC8A800C9E06A /* btn_图像浏览_nor.png */; settings = {ASSET_TAGS = (); }; };
+		E01693E01BFDC8A800C9E06A /* btn_图像浏览_pre.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693B71BFDC8A800C9E06A /* btn_图像浏览_pre.png */; settings = {ASSET_TAGS = (); }; };
+		E01693E11BFDC8A800C9E06A /* btn_下一个_dis.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693B81BFDC8A800C9E06A /* btn_下一个_dis.png */; settings = {ASSET_TAGS = (); }; };
+		E01693E21BFDC8A800C9E06A /* btn_下一个_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693B91BFDC8A800C9E06A /* btn_下一个_nor.png */; settings = {ASSET_TAGS = (); }; };
+		E01693E31BFDC8A800C9E06A /* btn_下一个_pre.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693BA1BFDC8A800C9E06A /* btn_下一个_pre.png */; settings = {ASSET_TAGS = (); }; };
+		E01693E41BFDC8A800C9E06A /* btn_暂停_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693BB1BFDC8A800C9E06A /* btn_暂停_nor.png */; settings = {ASSET_TAGS = (); }; };
+		E01693E51BFDC8A800C9E06A /* btn_暂停_pre.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693BC1BFDC8A800C9E06A /* btn_暂停_pre.png */; settings = {ASSET_TAGS = (); }; };
+		E01693E61BFDC8A800C9E06A /* icon_无线信号@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693BD1BFDC8A800C9E06A /* icon_无线信号@2x.png */; settings = {ASSET_TAGS = (); }; };
+		E01693E71BFDC8A800C9E06A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693BE1BFDC8A800C9E06A /* Icon.png */; settings = {ASSET_TAGS = (); }; };
+		E01693E81BFDC8A800C9E06A /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693BF1BFDC8A800C9E06A /* logo.png */; settings = {ASSET_TAGS = (); }; };
+		E01693EF1BFDC95600C9E06A /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E01693EE1BFDC95600C9E06A /* AsyncSocket.m */; settings = {ASSET_TAGS = (); }; };
+		E01693F31BFEAFE800C9E06A /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = E01693F21BFEAFE800C9E06A /* ALAssetsLibrary+CustomPhotoAlbum.m */; settings = {ASSET_TAGS = (); }; };
+		E01693F81BFEB19F00C9E06A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E01693F71BFEB19F00C9E06A /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
+		E01693FA1BFEB62F00C9E06A /* lepu.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693F91BFEB62F00C9E06A /* lepu.png */; settings = {ASSET_TAGS = (); }; };
+		E01693FC1BFEB72C00C9E06A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E01693FB1BFEB72C00C9E06A /* AssetsLibrary.framework */; };
+		E01693FF1BFEB7BF00C9E06A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E01693FE1BFEB7BF00C9E06A /* CFNetwork.framework */; };
+		E01694011BFEB80100C9E06A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E01694001BFEB80100C9E06A /* SystemConfiguration.framework */; };
+		E01694031BFEB81D00C9E06A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E01694021BFEB81D00C9E06A /* QuartzCore.framework */; };
+		E01694071BFEB97C00C9E06A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E01694091BFEB97C00C9E06A /* Localizable.strings */; };
+		E01694101BFEC54B00C9E06A /* 底部滑块_凹槽@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E01694121BFEC54B00C9E06A /* 底部滑块_凹槽@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E01693631BFDC11900C9E06A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E016933E1BFDC11900C9E06A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E01693451BFDC11900C9E06A;
+			remoteInfo = wireless_scan_B_mode;
+		};
+		E016936E1BFDC11900C9E06A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E016933E1BFDC11900C9E06A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E01693451BFDC11900C9E06A;
+			remoteInfo = wireless_scan_B_mode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E01693461BFDC11900C9E06A /* wireless_scan_B_mode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wireless_scan_B_mode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E016934A1BFDC11900C9E06A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E016934C1BFDC11900C9E06A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E016934D1BFDC11900C9E06A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E01693531BFDC11900C9E06A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E01693561BFDC11900C9E06A /* wireless_scan_B_mode.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = wireless_scan_B_mode.xcdatamodel; sourceTree = "<group>"; };
+		E01693581BFDC11900C9E06A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E016935B1BFDC11900C9E06A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E016935D1BFDC11900C9E06A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E01693621BFDC11900C9E06A /* wireless_scan_B_modeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wireless_scan_B_modeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E01693661BFDC11900C9E06A /* wireless_scan_B_modeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wireless_scan_B_modeTests.m; sourceTree = "<group>"; };
+		E01693681BFDC11900C9E06A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E016936D1BFDC11900C9E06A /* wireless_scan_B_modeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wireless_scan_B_modeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E01693711BFDC11900C9E06A /* wireless_scan_B_modeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wireless_scan_B_modeUITests.m; sourceTree = "<group>"; };
+		E01693731BFDC11900C9E06A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E016937F1BFDC33500C9E06A /* myView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myView.h; sourceTree = "<group>"; };
+		E01693801BFDC33500C9E06A /* myView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myView.m; sourceTree = "<group>"; };
+		E01693821BFDC3DE00C9E06A /* CustomSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSlider.h; sourceTree = "<group>"; };
+		E01693831BFDC3DE00C9E06A /* CustomSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSlider.m; sourceTree = "<group>"; };
+		E01693851BFDC45C00C9E06A /* CustomImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomImagePickerViewController.h; sourceTree = "<group>"; };
+		E01693861BFDC45C00C9E06A /* CustomImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomImagePickerViewController.m; sourceTree = "<group>"; };
+		E01693881BFDC4AB00C9E06A /* RawImag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RawImag.h; sourceTree = "<group>"; };
+		E01693891BFDC4AB00C9E06A /* RawImag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RawImag.m; sourceTree = "<group>"; };
+		E01693901BFDC6CC00C9E06A /* TransSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TransSocket.cpp; sourceTree = "<group>"; };
+		E01693911BFDC6CC00C9E06A /* TransSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransSocket.h; sourceTree = "<group>"; };
+		E01693931BFDC78400C9E06A /* DSCor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DSCor.cpp; sourceTree = "<group>"; };
+		E01693941BFDC78400C9E06A /* DSCor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSCor.h; sourceTree = "<group>"; };
+		E01693981BFDC8A800C9E06A /* 底部滑块_滑块@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "底部滑块_滑块@2x.png"; path = "image_png/底部滑块_滑块@2x.png"; sourceTree = "<group>"; };
+		E01693991BFDC8A800C9E06A /* 底部滑块_进度条@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "底部滑块_进度条@2x.png"; path = "image_png/底部滑块_进度条@2x.png"; sourceTree = "<group>"; };
+		E016939A1BFDC8A800C9E06A /* 放大按钮@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "放大按钮@2x.png"; path = "image_png/放大按钮@2x.png"; sourceTree = "<group>"; };
+		E016939B1BFDC8A800C9E06A /* 分割线.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "分割线.png"; path = "image_png/分割线.png"; sourceTree = "<group>"; };
+		E016939C1BFDC8A800C9E06A /* 加载页.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "加载页.png"; path = "image_png/加载页.png"; sourceTree = "<group>"; };
+		E016939D1BFDC8A800C9E06A /* 渐变.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "渐变.png"; path = "image_png/渐变.png"; sourceTree = "<group>"; };
+		E016939E1BFDC8A800C9E06A /* 刻度.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "刻度.png"; path = "image_png/刻度.png"; sourceTree = "<group>"; };
+		E016939F1BFDC8A800C9E06A /* 刻度黑.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "刻度黑.png"; path = "image_png/刻度黑.png"; sourceTree = "<group>"; };
+		E01693A01BFDC8A800C9E06A /* 缩小按钮@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "缩小按钮@2x.png"; path = "image_png/缩小按钮@2x.png"; sourceTree = "<group>"; };
+		E01693A11BFDC8A800C9E06A /* 右侧滑块_凹槽.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "右侧滑块_凹槽.png"; path = "image_png/右侧滑块_凹槽.png"; sourceTree = "<group>"; };
+		E01693A21BFDC8A800C9E06A /* 右侧滑块_滑块@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "右侧滑块_滑块@2x.png"; path = "image_png/右侧滑块_滑块@2x.png"; sourceTree = "<group>"; };
+		E01693A31BFDC8A800C9E06A /* 右侧滑块_进度条.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "右侧滑块_进度条.png"; path = "image_png/右侧滑块_进度条.png"; sourceTree = "<group>"; };
+		E01693A41BFDC8A800C9E06A /* bg_底部.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg_底部.png"; path = "image_png/bg_底部.png"; sourceTree = "<group>"; };
+		E01693A51BFDC8A800C9E06A /* bg_顶部.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg_顶部.png"; path = "image_png/bg_顶部.png"; sourceTree = "<group>"; };
+		E01693A61BFDC8A800C9E06A /* bg_整屏.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg_整屏.png"; path = "image_png/bg_整屏.png"; sourceTree = "<group>"; };
+		E01693A71BFDC8A800C9E06A /* btn_保存_dis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_保存_dis.png"; path = "image_png/btn_保存_dis.png"; sourceTree = "<group>"; };
+		E01693A81BFDC8A800C9E06A /* btn_保存_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_保存_nor.png"; path = "image_png/btn_保存_nor.png"; sourceTree = "<group>"; };
+		E01693A91BFDC8A800C9E06A /* btn_保存_pre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_保存_pre.png"; path = "image_png/btn_保存_pre.png"; sourceTree = "<group>"; };
+		E01693AA1BFDC8A800C9E06A /* btn_播放_dis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_播放_dis.png"; path = "image_png/btn_播放_dis.png"; sourceTree = "<group>"; };
+		E01693AB1BFDC8A800C9E06A /* btn_播放_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_播放_nor.png"; path = "image_png/btn_播放_nor.png"; sourceTree = "<group>"; };
+		E01693AC1BFDC8A800C9E06A /* btn_播放_pre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_播放_pre.png"; path = "image_png/btn_播放_pre.png"; sourceTree = "<group>"; };
+		E01693AD1BFDC8A800C9E06A /* btn_开启_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_开启_nor.png"; path = "image_png/btn_开启_nor.png"; sourceTree = "<group>"; };
+		E01693AE1BFDC8A800C9E06A /* btn_开启_pre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_开启_pre.png"; path = "image_png/btn_开启_pre.png"; sourceTree = "<group>"; };
+		E01693AF1BFDC8A800C9E06A /* btn_上一个_dis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_上一个_dis.png"; path = "image_png/btn_上一个_dis.png"; sourceTree = "<group>"; };
+		E01693B01BFDC8A800C9E06A /* btn_上一个_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_上一个_nor.png"; path = "image_png/btn_上一个_nor.png"; sourceTree = "<group>"; };
+		E01693B11BFDC8A800C9E06A /* btn_上一个_pre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_上一个_pre.png"; path = "image_png/btn_上一个_pre.png"; sourceTree = "<group>"; };
+		E01693B21BFDC8A800C9E06A /* btn_设置_dis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_设置_dis.png"; path = "image_png/btn_设置_dis.png"; sourceTree = "<group>"; };
+		E01693B31BFDC8A800C9E06A /* btn_设置_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_设置_nor.png"; path = "image_png/btn_设置_nor.png"; sourceTree = "<group>"; };
+		E01693B41BFDC8A800C9E06A /* btn_设置_pre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_设置_pre.png"; path = "image_png/btn_设置_pre.png"; sourceTree = "<group>"; };
+		E01693B51BFDC8A800C9E06A /* btn_图像浏览_dis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_图像浏览_dis.png"; path = "image_png/btn_图像浏览_dis.png"; sourceTree = "<group>"; };
+		E01693B61BFDC8A800C9E06A /* btn_图像浏览_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_图像浏览_nor.png"; path = "image_png/btn_图像浏览_nor.png"; sourceTree = "<group>"; };
+		E01693B71BFDC8A800C9E06A /* btn_图像浏览_pre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_图像浏览_pre.png"; path = "image_png/btn_图像浏览_pre.png"; sourceTree = "<group>"; };
+		E01693B81BFDC8A800C9E06A /* btn_下一个_dis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_下一个_dis.png"; path = "image_png/btn_下一个_dis.png"; sourceTree = "<group>"; };
+		E01693B91BFDC8A800C9E06A /* btn_下一个_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_下一个_nor.png"; path = "image_png/btn_下一个_nor.png"; sourceTree = "<group>"; };
+		E01693BA1BFDC8A800C9E06A /* btn_下一个_pre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_下一个_pre.png"; path = "image_png/btn_下一个_pre.png"; sourceTree = "<group>"; };
+		E01693BB1BFDC8A800C9E06A /* btn_暂停_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_暂停_nor.png"; path = "image_png/btn_暂停_nor.png"; sourceTree = "<group>"; };
+		E01693BC1BFDC8A800C9E06A /* btn_暂停_pre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_暂停_pre.png"; path = "image_png/btn_暂停_pre.png"; sourceTree = "<group>"; };
+		E01693BD1BFDC8A800C9E06A /* icon_无线信号@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_无线信号@2x.png"; path = "image_png/icon_无线信号@2x.png"; sourceTree = "<group>"; };
+		E01693BE1BFDC8A800C9E06A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = image_png/Icon.png; sourceTree = "<group>"; };
+		E01693BF1BFDC8A800C9E06A /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = image_png/logo.png; sourceTree = "<group>"; };
+		E01693ED1BFDC95600C9E06A /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		E01693EE1BFDC95600C9E06A /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		E01693F11BFEAFE800C9E06A /* ALAssetsLibrary+CustomPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+CustomPhotoAlbum.h"; sourceTree = "<group>"; };
+		E01693F21BFEAFE800C9E06A /* ALAssetsLibrary+CustomPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsLibrary+CustomPhotoAlbum.m"; sourceTree = "<group>"; };
+		E01693F61BFEB19F00C9E06A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E01693F71BFEB19F00C9E06A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E01693F91BFEB62F00C9E06A /* lepu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lepu.png; sourceTree = "<group>"; };
+		E01693FB1BFEB72C00C9E06A /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		E01693FE1BFEB7BF00C9E06A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E01694001BFEB80100C9E06A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E01694021BFEB81D00C9E06A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E01694081BFEB97C00C9E06A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E016940A1BFEB98200C9E06A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E016940B1BFEBEBF00C9E06A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		E016940C1BFEBEBF00C9E06A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		E016940D1BFEBEBF00C9E06A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		E016940F1BFEBFE200C9E06A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		E01694111BFEC54B00C9E06A /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/底部滑块_凹槽@2x.png"; sourceTree = "<group>"; };
+		E01694131BFEC55B00C9E06A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "zh-Hans.lproj/底部滑块_凹槽@2x.png"; sourceTree = "<group>"; };
+		E01694141BFEC55D00C9E06A /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = "Base.lproj/底部滑块_凹槽@2x.png"; sourceTree = "<group>"; };
+		E01694161BFECD2800C9E06A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E01693431BFDC11900C9E06A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E01694031BFEB81D00C9E06A /* QuartzCore.framework in Frameworks */,
+				E01694011BFEB80100C9E06A /* SystemConfiguration.framework in Frameworks */,
+				E01693FF1BFEB7BF00C9E06A /* CFNetwork.framework in Frameworks */,
+				E01693FC1BFEB72C00C9E06A /* AssetsLibrary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E016935F1BFDC11900C9E06A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E016936A1BFDC11900C9E06A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E016933D1BFDC11900C9E06A = {
+			isa = PBXGroup;
+			children = (
+				E01693481BFDC11900C9E06A /* wireless_scan_B_mode */,
+				E01693FD1BFEB73E00C9E06A /* framework */,
+				E01693651BFDC11900C9E06A /* wireless_scan_B_modeTests */,
+				E01693701BFDC11900C9E06A /* wireless_scan_B_modeUITests */,
+				E01693471BFDC11900C9E06A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E01693471BFDC11900C9E06A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E01693461BFDC11900C9E06A /* wireless_scan_B_mode.app */,
+				E01693621BFDC11900C9E06A /* wireless_scan_B_modeTests.xctest */,
+				E016936D1BFDC11900C9E06A /* wireless_scan_B_modeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E01693481BFDC11900C9E06A /* wireless_scan_B_mode */ = {
+			isa = PBXGroup;
+			children = (
+				E016934C1BFDC11900C9E06A /* AppDelegate.h */,
+				E016934D1BFDC11900C9E06A /* AppDelegate.m */,
+				E01693F51BFEB0FB00C9E06A /* main_controller */,
+				E01693F41BFEB0B500C9E06A /* util */,
+				E016938B1BFDC4E200C9E06A /* DSC_module */,
+				E016938F1BFDC62700C9E06A /* decode_frame_module */,
+				E01693E91BFDC8EF00C9E06A /* AsyncSocket */,
+				E01693F01BFDCA6200C9E06A /* ALAssetsLibrary+CustomPhotoAlbum */,
+				E01693581BFDC11900C9E06A /* Assets.xcassets */,
+				E016935A1BFDC11900C9E06A /* LaunchScreen.storyboard */,
+				E01693551BFDC11900C9E06A /* wireless_scan_B_mode.xcdatamodeld */,
+				E01693491BFDC11900C9E06A /* Supporting Files */,
+			);
+			path = wireless_scan_B_mode;
+			sourceTree = "<group>";
+		};
+		E01693491BFDC11900C9E06A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E01693961BFDC7EB00C9E06A /* image_png */,
+				E01694041BFEB84B00C9E06A /* localize */,
+				E016935D1BFDC11900C9E06A /* Info.plist */,
+				E016934A1BFDC11900C9E06A /* main.m */,
+				E01693F91BFEB62F00C9E06A /* lepu.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E01693651BFDC11900C9E06A /* wireless_scan_B_modeTests */ = {
+			isa = PBXGroup;
+			children = (
+				E01693661BFDC11900C9E06A /* wireless_scan_B_modeTests.m */,
+				E01693681BFDC11900C9E06A /* Info.plist */,
+			);
+			path = wireless_scan_B_modeTests;
+			sourceTree = "<group>";
+		};
+		E01693701BFDC11900C9E06A /* wireless_scan_B_modeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E01693711BFDC11900C9E06A /* wireless_scan_B_modeUITests.m */,
+				E01693731BFDC11900C9E06A /* Info.plist */,
+			);
+			path = wireless_scan_B_modeUITests;
+			sourceTree = "<group>";
+		};
+		E016938B1BFDC4E200C9E06A /* DSC_module */ = {
+			isa = PBXGroup;
+			children = (
+				E01693931BFDC78400C9E06A /* DSCor.cpp */,
+				E01693941BFDC78400C9E06A /* DSCor.h */,
+			);
+			name = DSC_module;
+			sourceTree = "<group>";
+		};
+		E016938F1BFDC62700C9E06A /* decode_frame_module */ = {
+			isa = PBXGroup;
+			children = (
+				E01693901BFDC6CC00C9E06A /* TransSocket.cpp */,
+				E01693911BFDC6CC00C9E06A /* TransSocket.h */,
+			);
+			name = decode_frame_module;
+			sourceTree = "<group>";
+		};
+		E01693961BFDC7EB00C9E06A /* image_png */ = {
+			isa = PBXGroup;
+			children = (
+				E01694121BFEC54B00C9E06A /* 底部滑块_凹槽@2x.png */,
+				E01693981BFDC8A800C9E06A /* 底部滑块_滑块@2x.png */,
+				E01693991BFDC8A800C9E06A /* 底部滑块_进度条@2x.png */,
+				E016939A1BFDC8A800C9E06A /* 放大按钮@2x.png */,
+				E016939B1BFDC8A800C9E06A /* 分割线.png */,
+				E016939C1BFDC8A800C9E06A /* 加载页.png */,
+				E016939D1BFDC8A800C9E06A /* 渐变.png */,
+				E016939E1BFDC8A800C9E06A /* 刻度.png */,
+				E016939F1BFDC8A800C9E06A /* 刻度黑.png */,
+				E01693A01BFDC8A800C9E06A /* 缩小按钮@2x.png */,
+				E01693A11BFDC8A800C9E06A /* 右侧滑块_凹槽.png */,
+				E01693A21BFDC8A800C9E06A /* 右侧滑块_滑块@2x.png */,
+				E01693A31BFDC8A800C9E06A /* 右侧滑块_进度条.png */,
+				E01693A41BFDC8A800C9E06A /* bg_底部.png */,
+				E01693A51BFDC8A800C9E06A /* bg_顶部.png */,
+				E01693A61BFDC8A800C9E06A /* bg_整屏.png */,
+				E01693A71BFDC8A800C9E06A /* btn_保存_dis.png */,
+				E01693A81BFDC8A800C9E06A /* btn_保存_nor.png */,
+				E01693A91BFDC8A800C9E06A /* btn_保存_pre.png */,
+				E01693AA1BFDC8A800C9E06A /* btn_播放_dis.png */,
+				E01693AB1BFDC8A800C9E06A /* btn_播放_nor.png */,
+				E01693AC1BFDC8A800C9E06A /* btn_播放_pre.png */,
+				E01693AD1BFDC8A800C9E06A /* btn_开启_nor.png */,
+				E01693AE1BFDC8A800C9E06A /* btn_开启_pre.png */,
+				E01693AF1BFDC8A800C9E06A /* btn_上一个_dis.png */,
+				E01693B01BFDC8A800C9E06A /* btn_上一个_nor.png */,
+				E01693B11BFDC8A800C9E06A /* btn_上一个_pre.png */,
+				E01693B21BFDC8A800C9E06A /* btn_设置_dis.png */,
+				E01693B31BFDC8A800C9E06A /* btn_设置_nor.png */,
+				E01693B41BFDC8A800C9E06A /* btn_设置_pre.png */,
+				E01693B51BFDC8A800C9E06A /* btn_图像浏览_dis.png */,
+				E01693B61BFDC8A800C9E06A /* btn_图像浏览_nor.png */,
+				E01693B71BFDC8A800C9E06A /* btn_图像浏览_pre.png */,
+				E01693B81BFDC8A800C9E06A /* btn_下一个_dis.png */,
+				E01693B91BFDC8A800C9E06A /* btn_下一个_nor.png */,
+				E01693BA1BFDC8A800C9E06A /* btn_下一个_pre.png */,
+				E01693BB1BFDC8A800C9E06A /* btn_暂停_nor.png */,
+				E01693BC1BFDC8A800C9E06A /* btn_暂停_pre.png */,
+				E01693BD1BFDC8A800C9E06A /* icon_无线信号@2x.png */,
+				E01693BE1BFDC8A800C9E06A /* Icon.png */,
+				E01693BF1BFDC8A800C9E06A /* logo.png */,
+			);
+			name = image_png;
+			sourceTree = "<group>";
+		};
+		E01693E91BFDC8EF00C9E06A /* AsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				E01693ED1BFDC95600C9E06A /* AsyncSocket.h */,
+				E01693EE1BFDC95600C9E06A /* AsyncSocket.m */,
+			);
+			name = AsyncSocket;
+			sourceTree = "<group>";
+		};
+		E01693F01BFDCA6200C9E06A /* ALAssetsLibrary+CustomPhotoAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				E01693F11BFEAFE800C9E06A /* ALAssetsLibrary+CustomPhotoAlbum.h */,
+				E01693F21BFEAFE800C9E06A /* ALAssetsLibrary+CustomPhotoAlbum.m */,
+			);
+			name = "ALAssetsLibrary+CustomPhotoAlbum";
+			sourceTree = "<group>";
+		};
+		E01693F41BFEB0B500C9E06A /* util */ = {
+			isa = PBXGroup;
+			children = (
+				E016937F1BFDC33500C9E06A /* myView.h */,
+				E01693801BFDC33500C9E06A /* myView.m */,
+				E01693821BFDC3DE00C9E06A /* CustomSlider.h */,
+				E01693831BFDC3DE00C9E06A /* CustomSlider.m */,
+				E01693881BFDC4AB00C9E06A /* RawImag.h */,
+				E01693891BFDC4AB00C9E06A /* RawImag.m */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		E01693F51BFEB0FB00C9E06A /* main_controller */ = {
+			isa = PBXGroup;
+			children = (
+				E01693521BFDC11900C9E06A /* Main.storyboard */,
+				E01693851BFDC45C00C9E06A /* CustomImagePickerViewController.h */,
+				E01693861BFDC45C00C9E06A /* CustomImagePickerViewController.m */,
+				E01693F61BFEB19F00C9E06A /* ViewController.h */,
+				E01693F71BFEB19F00C9E06A /* ViewController.m */,
+			);
+			name = main_controller;
+			sourceTree = "<group>";
+		};
+		E01693FD1BFEB73E00C9E06A /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				E01694021BFEB81D00C9E06A /* QuartzCore.framework */,
+				E01694001BFEB80100C9E06A /* SystemConfiguration.framework */,
+				E01693FE1BFEB7BF00C9E06A /* CFNetwork.framework */,
+				E01693FB1BFEB72C00C9E06A /* AssetsLibrary.framework */,
+			);
+			name = framework;
+			path = wireless_scan_B_mode;
+			sourceTree = "<group>";
+		};
+		E01694041BFEB84B00C9E06A /* localize */ = {
+			isa = PBXGroup;
+			children = (
+				E01694091BFEB97C00C9E06A /* Localizable.strings */,
+			);
+			name = localize;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E01693451BFDC11900C9E06A /* wireless_scan_B_mode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E01693761BFDC11900C9E06A /* Build configuration list for PBXNativeTarget "wireless_scan_B_mode" */;
+			buildPhases = (
+				E01693421BFDC11900C9E06A /* Sources */,
+				E01693431BFDC11900C9E06A /* Frameworks */,
+				E01693441BFDC11900C9E06A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wireless_scan_B_mode;
+			productName = wireless_scan_B_mode;
+			productReference = E01693461BFDC11900C9E06A /* wireless_scan_B_mode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E01693611BFDC11900C9E06A /* wireless_scan_B_modeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E01693791BFDC11900C9E06A /* Build configuration list for PBXNativeTarget "wireless_scan_B_modeTests" */;
+			buildPhases = (
+				E016935E1BFDC11900C9E06A /* Sources */,
+				E016935F1BFDC11900C9E06A /* Frameworks */,
+				E01693601BFDC11900C9E06A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E01693641BFDC11900C9E06A /* PBXTargetDependency */,
+			);
+			name = wireless_scan_B_modeTests;
+			productName = wireless_scan_B_modeTests;
+			productReference = E01693621BFDC11900C9E06A /* wireless_scan_B_modeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E016936C1BFDC11900C9E06A /* wireless_scan_B_modeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E016937C1BFDC11900C9E06A /* Build configuration list for PBXNativeTarget "wireless_scan_B_modeUITests" */;
+			buildPhases = (
+				E01693691BFDC11900C9E06A /* Sources */,
+				E016936A1BFDC11900C9E06A /* Frameworks */,
+				E016936B1BFDC11900C9E06A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E016936F1BFDC11900C9E06A /* PBXTargetDependency */,
+			);
+			name = wireless_scan_B_modeUITests;
+			productName = wireless_scan_B_modeUITests;
+			productReference = E016936D1BFDC11900C9E06A /* wireless_scan_B_modeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E016933E1BFDC11900C9E06A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = lepumedical;
+				TargetAttributes = {
+					E01693451BFDC11900C9E06A = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					E01693611BFDC11900C9E06A = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = E01693451BFDC11900C9E06A;
+					};
+					E016936C1BFDC11900C9E06A = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = E01693451BFDC11900C9E06A;
+					};
+				};
+			};
+			buildConfigurationList = E01693411BFDC11900C9E06A /* Build configuration list for PBXProject "wireless_scan_B_mode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = E016933D1BFDC11900C9E06A;
+			productRefGroup = E01693471BFDC11900C9E06A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E01693451BFDC11900C9E06A /* wireless_scan_B_mode */,
+				E01693611BFDC11900C9E06A /* wireless_scan_B_modeTests */,
+				E016936C1BFDC11900C9E06A /* wireless_scan_B_modeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E01693441BFDC11900C9E06A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E01693D01BFDC8A800C9E06A /* btn_保存_dis.png in Resources */,
+				E01693CE1BFDC8A800C9E06A /* bg_顶部.png in Resources */,
+				E01693C81BFDC8A800C9E06A /* 刻度黑.png in Resources */,
+				E01693D11BFDC8A800C9E06A /* btn_保存_nor.png in Resources */,
+				E01693C21BFDC8A800C9E06A /* 底部滑块_进度条@2x.png in Resources */,
+				E01693D41BFDC8A800C9E06A /* btn_播放_nor.png in Resources */,
+				E01693CC1BFDC8A800C9E06A /* 右侧滑块_进度条.png in Resources */,
+				E01693C41BFDC8A800C9E06A /* 分割线.png in Resources */,
+				E01693E11BFDC8A800C9E06A /* btn_下一个_dis.png in Resources */,
+				E01693E51BFDC8A800C9E06A /* btn_暂停_pre.png in Resources */,
+				E016935C1BFDC11900C9E06A /* LaunchScreen.storyboard in Resources */,
+				E01693FA1BFEB62F00C9E06A /* lepu.png in Resources */,
+				E01693E21BFDC8A800C9E06A /* btn_下一个_nor.png in Resources */,
+				E01693E61BFDC8A800C9E06A /* icon_无线信号@2x.png in Resources */,
+				E01693DB1BFDC8A800C9E06A /* btn_设置_dis.png in Resources */,
+				E01693C51BFDC8A800C9E06A /* 加载页.png in Resources */,
+				E01693D51BFDC8A800C9E06A /* btn_播放_pre.png in Resources */,
+				E01693CD1BFDC8A800C9E06A /* bg_底部.png in Resources */,
+				E01693D91BFDC8A800C9E06A /* btn_上一个_nor.png in Resources */,
+				E01694101BFEC54B00C9E06A /* 底部滑块_凹槽@2x.png in Resources */,
+				E01693C61BFDC8A800C9E06A /* 渐变.png in Resources */,
+				E01693591BFDC11900C9E06A /* Assets.xcassets in Resources */,
+				E01693DE1BFDC8A800C9E06A /* btn_图像浏览_dis.png in Resources */,
+				E01693CF1BFDC8A800C9E06A /* bg_整屏.png in Resources */,
+				E01693E71BFDC8A800C9E06A /* Icon.png in Resources */,
+				E01694071BFEB97C00C9E06A /* Localizable.strings in Resources */,
+				E01693E81BFDC8A800C9E06A /* logo.png in Resources */,
+				E01693DA1BFDC8A800C9E06A /* btn_上一个_pre.png in Resources */,
+				E01693E01BFDC8A800C9E06A /* btn_图像浏览_pre.png in Resources */,
+				E01693DF1BFDC8A800C9E06A /* btn_图像浏览_nor.png in Resources */,
+				E01693E41BFDC8A800C9E06A /* btn_暂停_nor.png in Resources */,
+				E01693C91BFDC8A800C9E06A /* 缩小按钮@2x.png in Resources */,
+				E01693D21BFDC8A800C9E06A /* btn_保存_pre.png in Resources */,
+				E01693CA1BFDC8A800C9E06A /* 右侧滑块_凹槽.png in Resources */,
+				E01693CB1BFDC8A800C9E06A /* 右侧滑块_滑块@2x.png in Resources */,
+				E01693D81BFDC8A800C9E06A /* btn_上一个_dis.png in Resources */,
+				E01693541BFDC11900C9E06A /* Main.storyboard in Resources */,
+				E01693C11BFDC8A800C9E06A /* 底部滑块_滑块@2x.png in Resources */,
+				E01693D31BFDC8A800C9E06A /* btn_播放_dis.png in Resources */,
+				E01693D71BFDC8A800C9E06A /* btn_开启_pre.png in Resources */,
+				E01693C71BFDC8A800C9E06A /* 刻度.png in Resources */,
+				E01693C31BFDC8A800C9E06A /* 放大按钮@2x.png in Resources */,
+				E01693DC1BFDC8A800C9E06A /* btn_设置_nor.png in Resources */,
+				E01693DD1BFDC8A800C9E06A /* btn_设置_pre.png in Resources */,
+				E01693E31BFDC8A800C9E06A /* btn_下一个_pre.png in Resources */,
+				E01693D61BFDC8A800C9E06A /* btn_开启_nor.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E01693601BFDC11900C9E06A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E016936B1BFDC11900C9E06A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E01693421BFDC11900C9E06A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E01693571BFDC11900C9E06A /* wireless_scan_B_mode.xcdatamodeld in Sources */,
+				E01693841BFDC3DE00C9E06A /* CustomSlider.m in Sources */,
+				E01693871BFDC45C00C9E06A /* CustomImagePickerViewController.m in Sources */,
+				E01693921BFDC6CC00C9E06A /* TransSocket.cpp in Sources */,
+				E01693951BFDC78400C9E06A /* DSCor.cpp in Sources */,
+				E016938A1BFDC4AB00C9E06A /* RawImag.m in Sources */,
+				E01693F81BFEB19F00C9E06A /* ViewController.m in Sources */,
+				E01693EF1BFDC95600C9E06A /* AsyncSocket.m in Sources */,
+				E016934E1BFDC11900C9E06A /* AppDelegate.m in Sources */,
+				E01693811BFDC33500C9E06A /* myView.m in Sources */,
+				E016934B1BFDC11900C9E06A /* main.m in Sources */,
+				E01693F31BFEAFE800C9E06A /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E016935E1BFDC11900C9E06A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E01693671BFDC11900C9E06A /* wireless_scan_B_modeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E01693691BFDC11900C9E06A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E01693721BFDC11900C9E06A /* wireless_scan_B_modeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E01693641BFDC11900C9E06A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E01693451BFDC11900C9E06A /* wireless_scan_B_mode */;
+			targetProxy = E01693631BFDC11900C9E06A /* PBXContainerItemProxy */;
+		};
+		E016936F1BFDC11900C9E06A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E01693451BFDC11900C9E06A /* wireless_scan_B_mode */;
+			targetProxy = E016936E1BFDC11900C9E06A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E01693521BFDC11900C9E06A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E01693531BFDC11900C9E06A /* Base */,
+				E016940B1BFEBEBF00C9E06A /* zh-Hans */,
+				E016940F1BFEBFE200C9E06A /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E016935A1BFDC11900C9E06A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E016935B1BFDC11900C9E06A /* Base */,
+				E016940C1BFEBEBF00C9E06A /* zh-Hans */,
+				E01694161BFECD2800C9E06A /* en */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E01694091BFEB97C00C9E06A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E01694081BFEB97C00C9E06A /* Base */,
+				E016940A1BFEB98200C9E06A /* en */,
+				E016940D1BFEBEBF00C9E06A /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E01694121BFEC54B00C9E06A /* 底部滑块_凹槽@2x.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E01694111BFEC54B00C9E06A /* en */,
+				E01694131BFEC55B00C9E06A /* zh-Hans */,
+				E01694141BFEC55D00C9E06A /* Base */,
+			);
+			name = "底部滑块_凹槽@2x.png";
+			path = image_png;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E01693741BFDC11900C9E06A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E01693751BFDC11900C9E06A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E01693771BFDC11900C9E06A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = wireless_scan_B_mode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lepumedical.wireless-scan-B-mode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E01693781BFDC11900C9E06A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = wireless_scan_B_mode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lepumedical.wireless-scan-B-mode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E016937A1BFDC11900C9E06A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = wireless_scan_B_modeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lepumedical.wireless-scan-B-modeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wireless_scan_B_mode.app/wireless_scan_B_mode";
+			};
+			name = Debug;
+		};
+		E016937B1BFDC11900C9E06A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = wireless_scan_B_modeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lepumedical.wireless-scan-B-modeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wireless_scan_B_mode.app/wireless_scan_B_mode";
+			};
+			name = Release;
+		};
+		E016937D1BFDC11900C9E06A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = wireless_scan_B_modeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lepumedical.wireless-scan-B-modeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = wireless_scan_B_mode;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E016937E1BFDC11900C9E06A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = wireless_scan_B_modeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lepumedical.wireless-scan-B-modeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = wireless_scan_B_mode;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E01693411BFDC11900C9E06A /* Build configuration list for PBXProject "wireless_scan_B_mode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E01693741BFDC11900C9E06A /* Debug */,
+				E01693751BFDC11900C9E06A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E01693761BFDC11900C9E06A /* Build configuration list for PBXNativeTarget "wireless_scan_B_mode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E01693771BFDC11900C9E06A /* Debug */,
+				E01693781BFDC11900C9E06A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E01693791BFDC11900C9E06A /* Build configuration list for PBXNativeTarget "wireless_scan_B_modeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E016937A1BFDC11900C9E06A /* Debug */,
+				E016937B1BFDC11900C9E06A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E016937C1BFDC11900C9E06A /* Build configuration list for PBXNativeTarget "wireless_scan_B_modeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E016937D1BFDC11900C9E06A /* Debug */,
+				E016937E1BFDC11900C9E06A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E01693551BFDC11900C9E06A /* wireless_scan_B_mode.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E01693561BFDC11900C9E06A /* wireless_scan_B_mode.xcdatamodel */,
+			);
+			currentVersion = E01693561BFDC11900C9E06A /* wireless_scan_B_mode.xcdatamodel */;
+			path = wireless_scan_B_mode.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E016933E1BFDC11900C9E06A /* Project object */;
+}

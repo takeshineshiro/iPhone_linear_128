@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>wireless_scan_B_mode.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>E01693451BFDC11900C9E06A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E01693611BFDC11900C9E06A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E016936C1BFDC11900C9E06A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

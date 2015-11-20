@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  wireless_scan_B_mode
+
+  Created by wong on 15/11/20.
+  Copyright © 2015年 lepumedical. All rights reserved.
+*/
+
+
+
+"Tips"             = "提示";
+"Saved Success"    = "保存成功";
+"Saved Failure"    ="保存失败";
+"OK"               ="确定";
+"The Channel is Currently Using."                    ="该通道当前正在使用中。";
+"Please Restart the Probe, then Connect to it Again."="请重新启动探头并重新连接。";
+"Probe is NOT connected."="探头没有连接。";
+"Left Hand Operration:"  ="左手操作：";
+"Channel Selection:"     ="通道选项：";
+"Select"           ="选择";
+"Close"            ="关闭";
+"FREEZE"           ="冻结";
+"LIVE"             ="运行";
+"Depth"            ="深度";
+"Gain"             ="增益";
+"WirelessScan"     = "无线超声图像";
+"Close"            ="关闭";
+"Settings"         ="设置";
+"Operation"        = "操作";
+"Wireless Channel" = "无线信道";

@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  wireless_scan_B_mode
+
+  Created by wong on 15/11/20.
+  Copyright © 2015年 lepumedical. All rights reserved.
+*/
+
+
+
+"Tips"          = "Tips";
+"Saved Success" = "Saved Success";
+"Saved Failure" ="Saved Failure";
+"OK"            ="OK";
+"The Channel is Currently Using."="The Channel is Currently Using.";
+"Please Restart the Probe, then Connect to it Again."="Please Restart the Probe, then Connect to it Again.";
+"Probe is NOT connected."="Probe is NOT connected.";
+"Left Hand Operration:"  ="Left Hand Operration:";
+"Channel Selection:"     ="Channel Selection:";
+"Select"          ="Select";
+"Close"           ="Close";
+"FREEZE"          ="FREEZE";
+"LIVE"            ="LIVE";
+"Depth"           ="Depth";
+"Gain"            ="Gain";
+"WirelessScan"    = "WirelessScan Images";
+"Close"           ="Close";
+"Settings"        ="Settings";
+"Operation"       = "Operation";
+"Wireless Channel"="Wireless Channel";
