@@ -15,7 +15,8 @@
 "The Channel is Currently Using."="The Channel is Currently Using.";
 "Please Restart the Probe, then Connect to it Again."="Please Restart the Probe, then Connect to it Again.";
 "Probe is NOT connected."="Probe is NOT connected.";
-"Left Hand Operration:"  ="Left Hand Operration:";
+"Left Hand Operation:"  ="Left Hand Operation:";
+"Right Hand Operation:"  ="Right Hand Operation:";
 "Channel Selection:"     ="Channel Selection:";
 "Select"          ="Select";
 "Close"           ="Close";

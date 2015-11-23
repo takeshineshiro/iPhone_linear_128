@@ -1,30 +1,60 @@
-/* 
-  Localizable.strings
-  wireless_scan_B_mode
+/* No comment provided by engineer. */
+"Channel Selection:" = "通道选项：";
 
-  Created by wong on 15/11/20.
-  Copyright © 2015年 lepumedical. All rights reserved.
-*/
+/* No comment provided by engineer. */
+"Close" = "关闭";
 
+/* No comment provided by engineer. */
+"Depth" = "深度";
 
+/* No comment provided by engineer. */
+"FREEZE" = "冻结";
 
-"Tips"             = "提示";
-"Saved Success"    = "保存成功";
-"Saved Failure"    ="保存失败";
-"OK"               ="确定";
-"The Channel is Currently Using."                    ="该通道当前正在使用中。";
-"Please Restart the Probe, then Connect to it Again."="请重新启动探头并重新连接。";
-"Probe is NOT connected."="探头没有连接。";
-"Left Hand Operration:"  ="左手操作：";
-"Channel Selection:"     ="通道选项：";
-"Select"           ="选择";
-"Close"            ="关闭";
-"FREEZE"           ="冻结";
-"LIVE"             ="运行";
-"Depth"            ="深度";
-"Gain"             ="增益";
-"WirelessScan"     = "无线超声图像";
-"Close"            ="关闭";
-"Settings"         ="设置";
-"Operation"        = "操作";
+/* No comment provided by engineer. */
+"Gain" = "增益";
+
+/* No comment provided by engineer. */
+"LIVE" = "运行";
+
+/* (No Commment) */
+"Left Hand Operation:" = "左手操作：";
+
+/* No comment provided by engineer. */
+"OK" = "确定";
+
+/* (No Commment) */
+"Operation" = "操作";
+
+/* No comment provided by engineer. */
+"Please Restart the Probe, then Connect to it Again." = "请重新启动探头并重新连接。";
+
+/* No comment provided by engineer. */
+"Probe is NOT connected." = "探头没有连接。";
+
+/* (No Commment) */
+"Right Hand Operation:" = "右手操作:";
+
+/* No comment provided by engineer. */
+"Saved Failure" = "保存失败";
+
+/* No comment provided by engineer. */
+"Saved Success" = "保存成功";
+
+/* No comment provided by engineer. */
+"Select" = "选择";
+
+/* No comment provided by engineer. */
+"Settings" = "设置";
+
+/* No comment provided by engineer. */
+"The Channel is Currently Using." = "该通道当前正在使用中。";
+
+/* No comment provided by engineer. */
+"Tips" = "提示";
+
+/* (No Commment) */
 "Wireless Channel" = "无线信道";
+
+/* No comment provided by engineer. */
+"WirelessScan" = "无线超声图像";
+

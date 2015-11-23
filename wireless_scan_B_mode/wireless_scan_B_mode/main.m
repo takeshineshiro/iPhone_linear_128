@@ -10,7 +10,17 @@
 #import "AppDelegate.h"
 
 int main(int argc, char * argv[]) {
+    
+    @try {
+        
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+    }
+    }
+    @catch ( NSException* e)  {
+        
+        NSLog(@"Exception=%@\nStack Trace:%@", e, [e  callStackSymbols]);
+    
+    
     }
 }

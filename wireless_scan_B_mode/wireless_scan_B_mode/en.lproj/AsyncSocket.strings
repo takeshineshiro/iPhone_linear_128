@@ -1,0 +1,14 @@
+/* No Localized Strings */
+
+"AsyncSocketCFSocketError"   =  "General CFSocket error";
+
+ "AsyncSocketCanceledError"   =  "Connection canceled";
+
+
+"AsyncSocketConnectTimeoutError"  =  "Attempt to connect to host timed out";
+
+"AsyncSocketReadMaxedOutError"     ="Read operation reached set maximum length";
+
+"AsyncSocketReadTimeoutError"     ="Read operation timed out";
+
+"AsyncSocketWriteTimeoutError"   =  "Write operation timed out";

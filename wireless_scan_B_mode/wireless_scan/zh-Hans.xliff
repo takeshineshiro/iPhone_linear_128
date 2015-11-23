@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="en.lproj/Localizable.strings" source-language="en" datatype="plaintext" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="7.1.1" build-num="7B1005"/>
+    </header>
+    <body>
+      <trans-unit id="Channel Selection:">
+        <source>Channel Selection:</source>
+        <target>通道选项：</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Close">
+        <source>Close</source>
+        <target>关闭</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Depth">
+        <source>Depth</source>
+        <target>深度</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="FREEZE">
+        <source>FREEZE</source>
+        <target>冻结</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Gain">
+        <source>Gain</source>
+        <target>增益</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="LIVE">
+        <source>LIVE</source>
+        <target>运行</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Left Hand Operation:">
+        <source>Left Hand Operation:</source>
+        <target>左手操作：</target>
+      </trans-unit>
+      <trans-unit id="Left Hand Operration:">
+        <source>Left Hand Operration:</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="OK">
+        <source>OK</source>
+        <target>确定</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Operation">
+        <source>Operation</source>
+        <target>操作</target>
+      </trans-unit>
+      <trans-unit id="Please Restart the Probe, then Connect to it Again.">
+        <source>Please Restart the Probe, then Connect to it Again.</source>
+        <target>请重新启动探头并重新连接。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Probe is NOT connected.">
+        <source>Probe is NOT connected.</source>
+        <target>探头没有连接。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Right Hand Operation:">
+        <source>Right Hand Operation:</source>
+        <target>右手操作:</target>
+      </trans-unit>
+      <trans-unit id="Saved Failure">
+        <source>Saved Failure</source>
+        <target>保存失败</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Saved Success">
+        <source>Saved Success</source>
+        <target>保存成功</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Select">
+        <source>Select</source>
+        <target>选择</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Settings">
+        <source>Settings</source>
+        <target>设置</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The Channel is Currently Using.">
+        <source>The Channel is Currently Using.</source>
+        <target>该通道当前正在使用中。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Tips">
+        <source>Tips</source>
+        <target>提示</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Wireless Channel">
+        <source>Wireless Channel</source>
+        <target>无线信道</target>
+      </trans-unit>
+      <trans-unit id="WirelessScan">
+        <source>WirelessScan Images</source>
+        <target>无线超声图像</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="wireless_scan_B_mode/Base.lproj/LaunchScreen.storyboard" source-language="en" datatype="plaintext" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="7.1.1" build-num="7B1005"/>
+    </header>
+    <body>
+      <trans-unit id="4N8-LD-qFo.text">
+		  <source>welcome</source>
+		  <target>欢迎使用乐普无线B超</target>
+        <note>Class = "UILabel"; text = "welcome"; ObjectID = "4N8-LD-qFo";</note>
+      </trans-unit>
+      <trans-unit id="welcome">
+        <source>welcome to use  lepu wireless scan</source>
+        <target>欢迎使用乐普无线B超</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="wireless_scan_B_mode/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="7.1.1" build-num="7B1005"/>
+    </header>
+    <body>
+      <trans-unit id="wireless scan view window">
+		  <source>wireless scan view  window</source>
+		  <target>无线B超图像窗口</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="wireless_scan_B_mode/Info.plist" source-language="en" datatype="plaintext" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="7.1.1" build-num="7B1005"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName">
+        <source>wireless  linear-128 </source>
+        <target>无线线阵-128</target>
+      </trans-unit>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="wireless_scan_B_mode/en.lproj/AsyncSocket.strings" source-language="en" datatype="plaintext" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="7.1.1" build-num="7B1005"/>
+    </header>
+    <body>
+      <trans-unit id="AsyncSocketCFSocketError">
+        <source>General CFSocket error</source>
+        <target>生成SOCKET通信失败</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="AsyncSocketCanceledError">
+        <source>Connection canceled</source>
+        <target>连接取消</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="AsyncSocketConnectTimeoutError">
+        <source>Attempt to connect to host timed out</source>
+        <target>连接超时</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="AsyncSocketReadMaxedOutError">
+        <source>Read operation reached set maximum length</source>
+        <target>读取达到最大长度</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="AsyncSocketReadTimeoutError">
+        <source>Read operation timed out</source>
+        <target>读取超时</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="AsyncSocketWriteTimeoutError">
+        <source>Write operation timed out</source>
+        <target>写入超时</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="wireless_scan_B_modeTests/Info.plist" source-language="en" datatype="plaintext" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="7.1.1" build-num="7B1005"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="wireless_scan_B_modeUITests/Info.plist" source-language="en" datatype="plaintext" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="7.1.1" build-num="7B1005"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

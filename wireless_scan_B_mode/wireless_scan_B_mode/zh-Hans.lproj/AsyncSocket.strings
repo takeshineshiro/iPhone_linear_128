@@ -1,0 +1,18 @@
+/* No comment provided by engineer. */
+"AsyncSocketCFSocketError" = "生成SOCKET通信失败";
+
+/* No comment provided by engineer. */
+"AsyncSocketCanceledError" = "连接取消";
+
+/* No comment provided by engineer. */
+"AsyncSocketConnectTimeoutError" = "连接超时";
+
+/* No comment provided by engineer. */
+"AsyncSocketReadMaxedOutError" = "读取达到最大长度";
+
+/* No comment provided by engineer. */
+"AsyncSocketReadTimeoutError" = "读取超时";
+
+/* No comment provided by engineer. */
+"AsyncSocketWriteTimeoutError" = "写入超时";
+
