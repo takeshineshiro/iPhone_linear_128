@@ -1,9 +1,9 @@
 //
 //  ViewController.m
-//  wireless_scan_B_mode
+//  WirelessScan
 //
-//  Created by wong on 15/11/20.
-//  Copyright © 2015年 lepumedical. All rights reserved.
+//  Created by Gan Sweet on 14-10-20.
+//  Copyright (c) 2014年 SweetGan. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -215,11 +215,11 @@
     
     //  创建Wifi SSID
     {
-        labelConnect = [[UILabel alloc]initWithFrame:CGRectMake(80, 1, 180, 15)];
+        labelConnect = [[UILabel alloc]initWithFrame:CGRectMake(28, 5, 180, 15)];
         labelConnect.backgroundColor = [UIColor clearColor];
         labelConnect.textColor = [UIColor whiteColor];
         labelConnect.text = m_strSSID;
-        labelConnect.font = [UIFont systemFontOfSize:15];
+        labelConnect.font = [UIFont systemFontOfSize:12];
         [self.view addSubview:labelConnect];
     }
     
@@ -227,7 +227,7 @@
     // 创建图像区
     //
     {
-        self.scanImg.frame = CGRectMake(self.scanImg.frame.origin.x, self.scanImg.frame.origin.y, 888,666);
+        self.scanImg.frame = CGRectMake(self.scanImg.frame.origin.x, self.scanImg.frame.origin.y, 700,400);
         // 创建黑色背景底图
         CGSize  size = self.scanImg.frame.size;
         UIGraphicsBeginImageContextWithOptions(size,YES,0);
@@ -241,31 +241,31 @@
         belowImageView.layer.borderColor = [UIColor grayColor].CGColor;
         
         //  创建元素
-        labelTime = [[UILabel alloc]initWithFrame:CGRectMake(26, 18, 160 , 20)];
+        labelTime = [[UILabel alloc]initWithFrame:CGRectMake(10, 1, 160 , 20)];
         labelTime.text = newDateStr;
         labelTime.backgroundColor = [UIColor clearColor];
         labelTime.textColor = [UIColor whiteColor];
-        labelTime.font = [UIFont systemFontOfSize:15];
+        labelTime.font = [UIFont systemFontOfSize:12];
         [belowImageView addSubview:labelTime];
         
         NSInteger labelW = self.scanImg.frame.size.width/2;
         
-        labelDepth = [[UILabel alloc]initWithFrame:CGRectMake(26, 43, labelW, 20)];
+        labelDepth = [[UILabel alloc]initWithFrame:CGRectMake(10, 18, labelW, 20)];
         labelDepth.backgroundColor = [UIColor clearColor];
         labelDepth.textColor = [UIColor whiteColor];
-        labelDepth.font = [UIFont systemFontOfSize:15];
+        labelDepth.font = [UIFont systemFontOfSize:12];
         [belowImageView addSubview:labelDepth];
         
-        labelGain = [[UILabel alloc]initWithFrame:CGRectMake(26, 68, labelW, 20)];
+        labelGain = [[UILabel alloc]initWithFrame:CGRectMake(10, 35, labelW, 20)];
         labelGain.backgroundColor = [UIColor clearColor];
         labelGain.textColor = [UIColor whiteColor];
-        labelGain.font = [UIFont systemFontOfSize:15];
+        labelGain.font = [UIFont systemFontOfSize:12];
         [belowImageView addSubview:labelGain];
         
-        labelFrozen = [[UILabel alloc]initWithFrame:CGRectMake(26, self.scanImg.frame.size.height-40, labelW, 20)];
+        labelFrozen = [[UILabel alloc]initWithFrame:CGRectMake(16, self.scanImg.frame.size.height-40, labelW, 20)];
         labelFrozen.backgroundColor = [UIColor clearColor];
         labelFrozen.textColor = [UIColor whiteColor];
-        labelFrozen.font = [UIFont systemFontOfSize:20];
+        labelFrozen.font = [UIFont systemFontOfSize:12];
         [belowImageView addSubview:labelFrozen];
         
         fullScrenButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -1059,9 +1059,8 @@
     if ([m_strSSID hasPrefix:@"SS-1 "]) {
         //
         //  无线阵列探头
-        
-        //m_nProbeType = CDSCor::PROBE_SECTORSCAN;               //HERE   CHANGED  BY  WONG
-        m_nProbeType = CDSCor::PROBE_LINEARARRAY;
+        //
+        m_nProbeType = CDSCor::PROBE_SECTORARRAY;
         char  str = [m_strSSID characterAtIndex:5];
         if (str=='G'){
             m_nSalesCode = 0x7f;

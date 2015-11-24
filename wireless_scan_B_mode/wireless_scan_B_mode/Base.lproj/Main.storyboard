@@ -18,29 +18,54 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_整屏.png" translatesAutoresizingMaskIntoConstraints="NO" id="aLd-zL-fp9">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="780" height="400"/>
                                 <animations/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="900" height="630"/>
+                                </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_顶部.png" translatesAutoresizingMaskIntoConstraints="NO" id="tQS-Za-i3l">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="24"/>
+                                <rect key="frame" x="0.0" y="0.0" width="780" height="24"/>
                                 <animations/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="900" height="24"/>
+                                </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_底部.png" translatesAutoresizingMaskIntoConstraints="NO" id="vPz-Ti-DJ4">
-                                <rect key="frame" x="0.0" y="560" width="600" height="40"/>
+                                <rect key="frame" x="0.0" y="350" width="780" height="50"/>
                                 <animations/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lo-YO-jz1">
-                                <rect key="frame" x="504" y="562" width="40" height="38"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vDB-07-4pc">
+                                <rect key="frame" x="0.0" y="15" width="700" height="400"/>
                                 <animations/>
-                                <state key="normal" title="Button" image="btn_图像浏览_nor.png">
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="分割线.png" translatesAutoresizingMaskIntoConstraints="NO" id="NN3-up-Efm">
+                                <rect key="frame" x="540" y="60" width="60" height="1"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CX-7X-HQv">
+                                <rect key="frame" x="542" y="62" width="56" height="57"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="btn_开启_pre.png" backgroundImage="btn_开启_nor.png">
                                     <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="clickScanSavedImg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rFU-ez-P2E"/>
+                                    <action selector="clickFreezing:" destination="BYZ-38-t0r" eventType="touchDown" id="g3V-dH-s6C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5Y-RB-NyI">
+                                <rect key="frame" x="0.0" y="0.0" width="36" height="24"/>
+                                <animations/>
+                                <state key="normal" image="icon_无线信号.png">
+                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapWifi" destination="BYZ-38-t0r" eventType="touchUpInside" id="bYy-la-EyL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5d-hi-82Y">
-                                <rect key="frame" x="552" y="560" width="40" height="40"/>
+                                <rect key="frame" x="546" y="560" width="40" height="40"/>
                                 <animations/>
                                 <state key="normal" title="Button" image="btn_设置_nor.png">
                                     <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -49,8 +74,28 @@
                                     <action selector="clickSettingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SEi-7W-KEE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lo-YO-jz1">
+                                <rect key="frame" x="498" y="560" width="40" height="40"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="btn_图像浏览_nor.png">
+                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickScanSavedImg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rFU-ez-P2E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sL-Ik-1Zb">
+                                <rect key="frame" x="450" y="560" width="40" height="40"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="btn_保存_nor.png">
+                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickSaveCurrentScanImg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xsD-4E-laz"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFm-Lk-tTR">
-                                <rect key="frame" x="408" y="560" width="40" height="40"/>
+                                <rect key="frame" x="402" y="560" width="40" height="40"/>
                                 <animations/>
                                 <state key="normal" title="Button" image="btn_下一个_nor.png">
                                     <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -60,7 +105,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cb-UO-xTi">
-                                <rect key="frame" x="360" y="560" width="40" height="40"/>
+                                <rect key="frame" x="353" y="560" width="40" height="40"/>
                                 <animations/>
                                 <state key="normal" title="Button" image="btn_播放_nor.png">
                                     <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -79,60 +124,22 @@
                                     <action selector="pre:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rad-mM-MJd"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lepu.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vqr-LA-DgX">
-                                <rect key="frame" x="541" y="28" width="58" height="30"/>
-                                <animations/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="分割线.png" translatesAutoresizingMaskIntoConstraints="NO" id="NN3-up-Efm">
-                                <rect key="frame" x="549" y="62" width="53" height="2"/>
-                                <animations/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CX-7X-HQv">
-                                <rect key="frame" x="541" y="70" width="56" height="57"/>
-                                <animations/>
-                                <state key="normal" title="Button" image="btn_开启_pre.png" backgroundImage="btn_开启_nor.png">
-                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="clickFreezing:" destination="BYZ-38-t0r" eventType="touchDown" id="g3V-dH-s6C"/>
-                                </connections>
-                            </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" minimumValueImage="底部滑块_进度条.png" maximumValueImage="底部滑块_凹槽.png" translatesAutoresizingMaskIntoConstraints="NO" id="iF0-bk-Nvm">
-                                <rect key="frame" x="36" y="565" width="270" height="31"/>
+                                <rect key="frame" x="36" y="560" width="270" height="31"/>
                                 <animations/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0/0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AlJ-It-jqJ">
-                                <rect key="frame" x="0.0" y="568" width="30" height="24"/>
+                                <rect key="frame" x="3" y="563" width="30" height="24"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5Y-RB-NyI">
-                                <rect key="frame" x="0.0" y="0.0" width="36" height="24"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lepu.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vqr-LA-DgX">
+                                <rect key="frame" x="542" y="28" width="58" height="30"/>
                                 <animations/>
-                                <state key="normal" image="icon_无线信号.png">
-                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="tapWifi" destination="BYZ-38-t0r" eventType="touchUpInside" id="bYy-la-EyL"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CI0-wo-Uxl">
-                                <rect key="frame" x="0.0" y="24" width="540" height="530"/>
-                                <animations/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sL-Ik-1Zb">
-                                <rect key="frame" x="456" y="562" width="40" height="40"/>
-                                <animations/>
-                                <state key="normal" title="Button" image="btn_保存_nor.png">
-                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="clickSaveCurrentScanImg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xsD-4E-laz"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -149,13 +156,13 @@
                         <outlet property="labelCount" destination="AlJ-It-jqJ" id="9wo-5M-D0f"/>
                         <outlet property="lableLine" destination="NN3-up-Efm" id="zjM-zv-pMJ"/>
                         <outlet property="playButton" destination="1cb-UO-xTi" id="Chz-4Z-376"/>
-                        <outlet property="scanImg" destination="CI0-wo-Uxl" id="7lE-fd-CGa"/>
+                        <outlet property="scanImg" destination="vDB-07-4pc" id="ufY-ba-EMZ"/>
                         <outlet property="slider" destination="iF0-bk-Nvm" id="nyx-OV-k6D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="213" y="243"/>
+            <point key="canvasLocation" x="254" y="213"/>
         </scene>
     </scenes>
     <resources>
