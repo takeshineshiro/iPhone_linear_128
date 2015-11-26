@@ -227,7 +227,7 @@
     // 创建图像区
     //
     {
-        self.scanImg.frame = CGRectMake(self.scanImg.frame.origin.x, self.scanImg.frame.origin.y, 700,400);
+        self.scanImg.frame = CGRectMake(self.scanImg.frame.origin.x, self.scanImg.frame.origin.y, 680,400);
         // 创建黑色背景底图
         CGSize  size = self.scanImg.frame.size;
         UIGraphicsBeginImageContextWithOptions(size,YES,0);
@@ -262,14 +262,14 @@
         labelGain.font = [UIFont systemFontOfSize:12];
         [belowImageView addSubview:labelGain];
         
-        labelFrozen = [[UILabel alloc]initWithFrame:CGRectMake(16, self.scanImg.frame.size.height-40, labelW, 20)];
+        labelFrozen = [[UILabel alloc]initWithFrame:CGRectMake(10, self.scanImg.frame.size.height-40, labelW, 20)];
         labelFrozen.backgroundColor = [UIColor clearColor];
         labelFrozen.textColor = [UIColor whiteColor];
         labelFrozen.font = [UIFont systemFontOfSize:12];
         [belowImageView addSubview:labelFrozen];
         
         fullScrenButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        fullScrenButton.frame = CGRectMake(self.scanImg.frame.size.width-70, self.scanImg.frame.size.height-60, 60, 60);
+        fullScrenButton.frame = CGRectMake(self.scanImg.frame.size.width-40, self.scanImg.frame.size.height-30, 30, 30);
         [fullScrenButton setImage:[UIImage imageNamed:@"放大按钮.png"] forState:UIControlStateNormal];
         [fullScrenButton addTarget:self action:@selector(clickFullScreen:) forControlEvents:UIControlEventTouchUpInside];
         UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapInImageV:)];
@@ -277,13 +277,13 @@
         [self.scanImg addSubview:fullScrenButton];
         
         //  提示信息条
-        labelNote = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 30)];
+        labelNote = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 20)];
         
         //labelNote.center = //self.scanImg.center;
         
         labelNote.center = CGPointMake(self.scanImg.center.x, self.scanImg.center.y/2);
         
-        labelNote.font = [UIFont systemFontOfSize:25];
+        labelNote.font = [UIFont systemFontOfSize:12];
         labelNote.textColor = [UIColor blueColor];
         [self.scanImg addSubview:labelNote];
         
@@ -333,8 +333,9 @@
         [self.view addSubview:bottomSlider];
     }
     //  增益进度条
+    /*
     {
-        sideSlider = [[CustomSlider alloc]initWithFrame:CGRectMake(770, self.view.frame.size.height/2+100, 379, 20)];
+        sideSlider = [[CustomSlider alloc]initWithFrame:CGRectMake(480, self.view.frame.size.height/2+80, 300, 20)];
         [sideSlider setMinimumTrackImage:[UIImage imageNamed:@"右侧滑块_进度条.png"] forState:UIControlStateNormal];
         [sideSlider  setMaximumTrackImage:[UIImage imageNamed:@"底部滑块_凹槽.png" ] forState:UIControlStateNormal];
         [sideSlider setThumbImage:[UIImage imageNamed:@"右侧滑块_滑块.png"] forState:UIControlStateNormal];
@@ -346,6 +347,7 @@
         sideSlider.value = [ud integerForKey:@"Gain"];
         [self.view addSubview:sideSlider];
     }
+     */
     
     
     //  创建 通道picker

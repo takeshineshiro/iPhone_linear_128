@@ -8,6 +8,8 @@
 
 #ifndef __DSCOR_H__
 #define __DSCOR_H__
+
+
 class CDSCor
 {
 protected:
@@ -22,7 +24,6 @@ public:
     enum {
         PROBE_SECTORSCAN	=	0,
         PROBE_SECTORARRAY	=	1,
-        PROBE_LINEARARRAY   =   2,
     };
     
     enum {
@@ -44,22 +45,28 @@ protected:
         unsigned long	ulPartLine;
         unsigned long	ulPartPixel;
     } DSC_INDEX;
-    DSC_INDEX* m_pDscIndex;
-    unsigned char* m_pDSCImage;
+    
+    DSC_INDEX*       m_pDscIndex;
+    
+    unsigned char*   m_pDSCImage;
     
     //  gama map table
-    float m_fGama;
-    unsigned int m_unGama[256];
+    float           m_fGama;
+    
+    unsigned int    m_unGama[256];
     
     //	µ±«∞ÃΩÕ∑¿‡–Õ”ÎZoomÀ˜“˝
-    int	m_nProbeType;
-    int m_nZoomIndex;
+    int	            m_nProbeType;
+    
+    int             m_nZoomIndex;
+    
+    
 public:
     //	≥ı ºªØDSCœµ ˝
-    bool InitDSC(int nProbeType,int nZoom);
+    bool       InitDSC(int nProbeType,int nZoom);
     
     //  Init gama map table
-    bool InitGama(float gama);
+    bool       InitGama(float gama);
     //  Get gama data
     unsigned int* GetGama();
     
@@ -68,6 +75,7 @@ public:
     unsigned char* DSCImage(unsigned char* pRawData);
     
     //	ªÒ»°DSC∫ÛÕºœÒµƒ±»¿˝≥ﬂ£¨µ•Œª£∫ mm/pixel
+    
     static double GetScale(int nProbeType,int nZoom);
     
     
@@ -75,5 +83,4 @@ public:
 };
 
 #endif //__DSCOR_H__
-
 
