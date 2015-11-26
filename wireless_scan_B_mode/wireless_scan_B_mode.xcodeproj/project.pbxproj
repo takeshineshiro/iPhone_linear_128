@@ -72,6 +72,9 @@
 		E01694071BFEB97C00C9E06A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E01694091BFEB97C00C9E06A /* Localizable.strings */; };
 		E01694101BFEC54B00C9E06A /* 底部滑块_凹槽@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E01694121BFEC54B00C9E06A /* 底部滑块_凹槽@2x.png */; };
 		E01694181BFEFECB00C9E06A /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E01694171BFEFECB00C9E06A /* libsqlite3.0.tbd */; };
+		E0432DEE1C0691B400E47CF3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0432DED1C0691B400E47CF3 /* CoreGraphics.framework */; };
+		E0432DF51C06A90F00E47CF3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E0432DF41C06A90F00E47CF3 /* libz.tbd */; };
+		E0432DFA1C06ADD800E47CF3 /* libReveal.dylib in Resources */ = {isa = PBXBuildFile; fileRef = E0432DF81C06ADBF00E47CF3 /* libReveal.dylib */; };
 		E05BE63E1C02A42E00962B13 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E05BE6401C02A42E00962B13 /* InfoPlist.strings */; };
 		E05BE6451C02C1F400962B13 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E05BE6471C02C1F400962B13 /* InfoPlist.strings */; };
 		E05BE64B1C02C1F400962B13 /* AsyncSocket.strings in Resources */ = {isa = PBXBuildFile; fileRef = E05BE64D1C02C1F400962B13 /* AsyncSocket.strings */; };
@@ -181,6 +184,9 @@
 		E01694131BFEC55B00C9E06A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "zh-Hans.lproj/底部滑块_凹槽@2x.png"; sourceTree = "<group>"; };
 		E01694141BFEC55D00C9E06A /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = "Base.lproj/底部滑块_凹槽@2x.png"; sourceTree = "<group>"; };
 		E01694171BFEFECB00C9E06A /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		E0432DED1C0691B400E47CF3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E0432DF41C06A90F00E47CF3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		E0432DF81C06ADBF00E47CF3 /* libReveal.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libReveal.dylib; sourceTree = "<group>"; };
 		E05BE63F1C02A42E00962B13 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		E05BE6411C02A43500962B13 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E05BE6421C02A43700962B13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -200,6 +206,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0432DF51C06A90F00E47CF3 /* libz.tbd in Frameworks */,
+				E0432DEE1C0691B400E47CF3 /* CoreGraphics.framework in Frameworks */,
 				E01694181BFEFECB00C9E06A /* libsqlite3.0.tbd in Frameworks */,
 				E01694031BFEB81D00C9E06A /* QuartzCore.framework in Frameworks */,
 				E01694011BFEB80100C9E06A /* SystemConfiguration.framework in Frameworks */,
@@ -411,7 +419,10 @@
 		E01693FD1BFEB73E00C9E06A /* framework */ = {
 			isa = PBXGroup;
 			children = (
+				E0432DF81C06ADBF00E47CF3 /* libReveal.dylib */,
 				E01694171BFEFECB00C9E06A /* libsqlite3.0.tbd */,
+				E0432DF41C06A90F00E47CF3 /* libz.tbd */,
+				E0432DED1C0691B400E47CF3 /* CoreGraphics.framework */,
 				E01694021BFEB81D00C9E06A /* QuartzCore.framework */,
 				E01694001BFEB80100C9E06A /* SystemConfiguration.framework */,
 				E01693FE1BFEB7BF00C9E06A /* CFNetwork.framework */,
@@ -504,6 +515,7 @@
 				TargetAttributes = {
 					E01693451BFDC11900C9E06A = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = D8NM8NBC9C;
 					};
 					E01693611BFDC11900C9E06A = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -541,6 +553,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0432DFA1C06ADD800E47CF3 /* libReveal.dylib in Resources */,
 				E01693D01BFDC8A800C9E06A /* btn_保存_dis.png in Resources */,
 				E01693CE1BFDC8A800C9E06A /* bg_顶部.png in Resources */,
 				E01693C81BFDC8A800C9E06A /* 刻度黑.png in Resources */,
@@ -779,7 +792,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -816,7 +829,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -826,20 +839,46 @@
 		E01693771BFDC11900C9E06A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wireless_scan_B_mode",
+				);
 				INFOPLIST_FILE = wireless_scan_B_mode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wireless_scan_B_mode",
+				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lepumedical.wireless-scan-B-mode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		E01693781BFDC11900C9E06A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wireless_scan_B_mode",
+				);
 				INFOPLIST_FILE = wireless_scan_B_mode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wireless_scan_B_mode",
+				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lepumedical.wireless-scan-B-mode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -901,7 +940,7 @@
 				E01693751BFDC11900C9E06A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		E01693761BFDC11900C9E06A /* Build configuration list for PBXNativeTarget "wireless_scan_B_mode" */ = {
 			isa = XCConfigurationList;
@@ -910,7 +949,7 @@
 				E01693781BFDC11900C9E06A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		E01693791BFDC11900C9E06A /* Build configuration list for PBXNativeTarget "wireless_scan_B_modeTests" */ = {
 			isa = XCConfigurationList;
@@ -919,7 +958,7 @@
 				E016937B1BFDC11900C9E06A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		E016937C1BFDC11900C9E06A /* Build configuration list for PBXNativeTarget "wireless_scan_B_modeUITests" */ = {
 			isa = XCConfigurationList;
@@ -928,7 +967,7 @@
 				E016937E1BFDC11900C9E06A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 

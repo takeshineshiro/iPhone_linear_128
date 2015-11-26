@@ -6,6 +6,10 @@
 //  Copyright © 2015年 lepumedical. All rights reserved.
 //
 
+#pragma mark - Reveal
+
+#import <dlfcn.h>
+
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
@@ -15,8 +19,44 @@
 @implementation AppDelegate
 
 
+- (void)loadReveal
+{
+    if (NSClassFromString(@"IBARevealLoader") == nil)
+    {
+        NSString *revealLibName = @"libReveal";
+        NSString *revealLibExtension = @"dylib";
+        NSString *error;
+        NSString *dyLibPath = [[NSBundle mainBundle] pathForResource:revealLibName ofType:revealLibExtension];
+        
+        if (dyLibPath != nil)
+        {
+            NSLog(@"Loading dynamic library: %@", dyLibPath);
+            void *revealLib = dlopen([dyLibPath cStringUsingEncoding:NSUTF8StringEncoding], RTLD_NOW);
+            
+            if (revealLib == NULL)
+            {
+                error = [NSString stringWithUTF8String:dlerror()];
+            }
+        }
+        else
+        {
+            error = @"File not found.";
+        }
+        
+        if (error != nil)
+        {
+            NSString *message = [NSString stringWithFormat:@"%@.%@ failed to load with error: %@", revealLibName, revealLibExtension, error];
+            [[[UIAlertView alloc] initWithTitle:@"Reveal library could not be loaded" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+        }
+    }
+}
+
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //[self loadReveal];
     
     __block    UIBackgroundTaskIdentifier bgTask;        //该变量会被改变，不会被复制
     
