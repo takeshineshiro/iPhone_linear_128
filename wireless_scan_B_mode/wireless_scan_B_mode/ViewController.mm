@@ -227,7 +227,7 @@
     // 创建图像区
     //
     {
-        self.scanImg.frame = CGRectMake(self.scanImg.frame.origin.x, self.scanImg.frame.origin.y, 680,400);
+        self.scanImg.frame = CGRectMake(self.scanImg.frame.origin.x, self.scanImg.frame.origin.y, 680,350);
         // 创建黑色背景底图
         CGSize  size = self.scanImg.frame.size;
         UIGraphicsBeginImageContextWithOptions(size,YES,0);
