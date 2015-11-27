@@ -269,7 +269,7 @@
         fullScrenButton.frame = CGRectMake(self.scanImg.frame.size.width-40, self.scanImg.frame.size.height-30, 30, 30);
         [fullScrenButton setImage:[UIImage imageNamed:@"放大按钮.png"] forState:UIControlStateNormal];
         [fullScrenButton addTarget:self action:@selector(clickFullScreen:) forControlEvents:UIControlEventTouchUpInside];
-        UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapInImageV:)];                                     //??//
+        UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapInImageV:)];
         [self.scanImg addGestureRecognizer:tap];
         [self.scanImg addSubview:fullScrenButton];
         
@@ -332,7 +332,7 @@
     //  增益进度条
     
     {
-        sideSlider = [[CustomSlider alloc]initWithFrame:CGRectMake(480, self.view.frame.size.height/2+80, 300, 20)];
+        sideSlider = [[CustomSlider alloc]initWithFrame:CGRectMake(698, 130, 20, 235)];
         [sideSlider setMinimumTrackImage:[UIImage imageNamed:@"右侧滑块_进度条.png"] forState:UIControlStateNormal];
         [sideSlider  setMaximumTrackImage:[UIImage imageNamed:@"底部滑块_凹槽.png" ] forState:UIControlStateNormal];
         [sideSlider setThumbImage:[UIImage imageNamed:@"右侧滑块_滑块.png"] forState:UIControlStateNormal];
