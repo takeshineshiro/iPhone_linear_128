@@ -2,9 +2,6 @@
 //  ViewController.m
 //  WirelessScan
 //
-//  Created by Gan Sweet on 14-10-20.
-//  Copyright (c) 2014年 SweetGan. All rights reserved.
-//
 
 #import "ViewController.h"
 #import "TransSocket.h"
@@ -272,7 +269,7 @@
         fullScrenButton.frame = CGRectMake(self.scanImg.frame.size.width-40, self.scanImg.frame.size.height-30, 30, 30);
         [fullScrenButton setImage:[UIImage imageNamed:@"放大按钮.png"] forState:UIControlStateNormal];
         [fullScrenButton addTarget:self action:@selector(clickFullScreen:) forControlEvents:UIControlEventTouchUpInside];
-        UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapInImageV:)];
+        UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapInImageV:)];                                     //??//
         [self.scanImg addGestureRecognizer:tap];
         [self.scanImg addSubview:fullScrenButton];
         
@@ -333,7 +330,7 @@
         [self.view addSubview:bottomSlider];
     }
     //  增益进度条
-    /*
+    
     {
         sideSlider = [[CustomSlider alloc]initWithFrame:CGRectMake(480, self.view.frame.size.height/2+80, 300, 20)];
         [sideSlider setMinimumTrackImage:[UIImage imageNamed:@"右侧滑块_进度条.png"] forState:UIControlStateNormal];
@@ -347,7 +344,7 @@
         sideSlider.value = [ud integerForKey:@"Gain"];
         [self.view addSubview:sideSlider];
     }
-     */
+    
     
     
     //  创建 通道picker
@@ -1543,18 +1540,18 @@
 {
     if (m_bLeftHand) {
         //  左手操作界面布置
-        self.scanImg.frame = CGRectMake(128, 32, 888, 666);
-        self.imgLogo.frame = CGRectMake(7, 62, 115, 42);
-        sideSlider.frame = CGRectMake(55,302,20, 379);
-        self.btnFrozen.frame = CGRectMake(18, 179, 93, 93);
-        self.lableLine.frame = CGRectMake(8, 142, 112, 2);
+        self.scanImg.frame = CGRectMake(0, 20, 680, 350);
+        self.imgLogo.frame = CGRectMake(680, 20, 56, 40);
+        sideSlider.frame = CGRectMake(698,130,20, 235);
+        self.btnFrozen.frame = CGRectMake(680, 68, 56, 56);
+        self.lableLine.frame = CGRectMake(680, 62, 60, 1);
     } else {
         //  右手操作界面布置
-        self.scanImg.frame = CGRectMake(8, 32, 888, 666);
-        self.imgLogo.frame = CGRectMake(902, 62, 115, 42);
-        sideSlider.frame = CGRectMake(949,304,20, 379);
-        self.btnFrozen.frame = CGRectMake(913, 179, 93, 93);
-        self.lableLine.frame = CGRectMake(904, 142, 112, 2);
+        self.scanImg.frame = CGRectMake(60, 20, 680, 350);
+        self.imgLogo.frame = CGRectMake(0, 20, 56, 40);
+        sideSlider.frame = CGRectMake(18,130,20, 235);
+        self.btnFrozen.frame = CGRectMake(0, 68, 56, 56);
+        self.lableLine.frame = CGRectMake(0, 62, 60, 1);
     }
 }
 
