@@ -1391,8 +1391,8 @@
     }
     
     
-    imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-    imagePicker.allowsEditing = YES;
+    imagePicker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+    imagePicker.allowsEditing = NO;
     imagePicker.delegate = self;
     
     if ([[UIDevice currentDevice].model hasPrefix:@"iPhone"]) {
