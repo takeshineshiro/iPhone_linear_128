@@ -312,9 +312,9 @@ double CDSCor::GetScale(int nProbeType,int nZoom)
     else if (PROBE_SECTORARRAY == nProbeType)
     {	//	ŒﬁœﬂÕπ’ÛÃΩÕ∑
         
-        dbSectorAngle = 40.0;	//	Õπ’Û£∫78°„
+        dbSectorAngle = 80.0;	//	Õπ’Û£∫78°„
         
-        dbDeadRgn = 30.0;		//	Õπ’Û∞Îæ∂£∫41.0mm
+        dbDeadRgn = 40.0;		//	Õπ’Û∞Îæ∂£∫41.0mm
         switch (nZoom)
         {
             case 0:

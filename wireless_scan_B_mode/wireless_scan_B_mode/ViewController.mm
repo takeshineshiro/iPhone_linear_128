@@ -592,6 +592,9 @@
     fsbHiddenTimer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(fullScreenHiden) userInfo:nil repeats:NO];
 }
 
+
+
+
 -(void)clickFullScreen:(UIButton*)btn{
     
     if (fsbHiddenTimer != nil) {
@@ -600,19 +603,23 @@
     }
     
     NSInteger labelW = self.scanImg.frame.size.width/2;
-    if (btn.tag == 0) {
+    if (btn.tag == 0) {               //size
         btn.tag = 1;
         normalFrame = self.scanImg.frame;
         self.scanImg.frame = self.view.frame;
         belowImageView.frame = CGRectMake(0,0,self.scanImg.frame.size.width,self.scanImg.frame.size.height);
         self.scanImg.backgroundColor = [UIColor blackColor];
         [btn setImage:[UIImage imageNamed:@"缩小按钮.png"] forState:UIControlStateNormal];
-        fullScrenButton.frame = CGRectMake(self.scanImg.frame.size.width-70, self.scanImg.frame.size.height-60, 60, 60);
+        fullScrenButton.frame = CGRectMake(self.scanImg.frame.size.width-40, self.scanImg.frame.size.height-30, 30, 30);
+        
         labelConnect.hidden = YES;
         sideSlider.hidden = YES;
         bottomSlider.hidden = YES;
-        labelFrozen.frame = CGRectMake(26, self.scanImg.frame.size.height-40, labelW, 20);
-    }else{
+        
+        labelFrozen.frame = CGRectMake(10, self.scanImg.frame.size.height-30, labelW, 20);
+        
+        
+    }else{                       //normal
         
         btn.tag = 0;
         self.scanImg.frame = normalFrame;
@@ -621,16 +628,19 @@
         
         self.scanImg.backgroundColor = [UIColor clearColor];
         [btn setImage:[UIImage imageNamed:@"放大按钮.png"] forState:UIControlStateNormal];
-        fullScrenButton.frame = CGRectMake(self.scanImg.frame.size.width-70, self.scanImg.frame.size.height-60, 60, 60);
+        fullScrenButton.frame = CGRectMake(self.scanImg.frame.size.width-40, self.scanImg.frame.size.height-30, 30, 30);
         bottomSlider.hidden = NO;
         sideSlider.hidden = NO;
         labelConnect.hidden = NO;
-        labelFrozen.frame = CGRectMake(26, self.scanImg.frame.size.height-40, labelW, 20);
+        labelFrozen.frame = CGRectMake(10, self.scanImg.frame.size.height-30, labelW, 20);
         
     }
     
     
 }
+
+
+
 
 
 -(void)slidingSideBoard:(UISlider*)sli{
@@ -1387,6 +1397,7 @@
     
     if ([[UIDevice currentDevice].model hasPrefix:@"iPhone"]) {
         
+        NSLog(@"use iphone module");
         [self presentViewController:imagePicker animated:YES completion:nil];
         
     }else if ([[UIDevice currentDevice].model hasPrefix:@"iPad"]){
@@ -1435,6 +1446,8 @@
     [picker dismissViewControllerAnimated:YES completion:nil];
     
 }
+
+
 
 
 
