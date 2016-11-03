@@ -144,7 +144,7 @@ bool CDSCor::InitDSC(int nProbeType,int nZoom)
         switch (nZoom)
         {
             case 0:
-                dbSampleRate = 4545454.0;   //  50MHz div 10+1
+                dbSampleRate = 3125000.0;   //  50MHz div 10+1。  4545454.0
                 break;
             case 1:
                 dbSampleRate = 3125000.0;   //  50MHz div 15+1
@@ -312,13 +312,13 @@ double CDSCor::GetScale(int nProbeType,int nZoom)
     else if (PROBE_SECTORARRAY == nProbeType)
     {	//	ŒﬁœﬂÕπ’ÛÃΩÕ∑
         
-        dbSectorAngle = 80.0;	//	Õπ’Û£∫78°„
+        dbSectorAngle = 60.0;	//	Õπ’Û£∫78°„
         
-        dbDeadRgn = 40.0;		//	Õπ’Û∞Îæ∂£∫41.0mm
+        dbDeadRgn = 60.0;		//	Õπ’Û∞Îæ∂£∫41.0mm
         switch (nZoom)
         {
             case 0:
-                dbSampleRate = 4545454.0;   //  50MHz div 10+1
+                dbSampleRate = 3125000.0;   //  50MHz div 10+1。   4545454.0
                 break;
             case 1:
                 dbSampleRate = 3125000.0;   //  50MHz div 15+1

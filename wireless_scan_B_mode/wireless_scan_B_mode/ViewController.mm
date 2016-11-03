@@ -610,11 +610,20 @@
         belowImageView.frame = CGRectMake(0,0,self.scanImg.frame.size.width,self.scanImg.frame.size.height);
         self.scanImg.backgroundColor = [UIColor blackColor];
         [btn setImage:[UIImage imageNamed:@"缩小按钮.png"] forState:UIControlStateNormal];
-        fullScrenButton.frame = CGRectMake(self.scanImg.frame.size.width-40, self.scanImg.frame.size.height-30, 30, 30);
+        fullScrenButton.frame = CGRectMake(self.belowImageView.frame.size.width-60, self.belowImageView.frame.size.height-80, 30, 30);
         
         labelConnect.hidden = YES;
         sideSlider.hidden = YES;
         bottomSlider.hidden = YES;
+        
+        _imgLogo.hidden     =  YES;
+        _lableLine.hidden   =  YES;
+        
+        _btnFrozen.hidden   =  YES;
+        
+        _btnWifi.hidden     =  YES ;
+        
+        
         
         labelFrozen.frame = CGRectMake(10, self.scanImg.frame.size.height-30, labelW, 20);
         
@@ -632,6 +641,14 @@
         bottomSlider.hidden = NO;
         sideSlider.hidden = NO;
         labelConnect.hidden = NO;
+        
+        _imgLogo.hidden     =  NO;
+        _lableLine.hidden   =  NO;
+        
+        _btnFrozen.hidden   =  NO;
+        
+        _btnWifi.hidden     =  NO;
+        
         labelFrozen.frame = CGRectMake(10, self.scanImg.frame.size.height-30, labelW, 20);
         
     }
@@ -1560,11 +1577,11 @@
         self.lableLine.frame = CGRectMake(680, 62, 60, 1);
     } else {
         //  右手操作界面布置
-        self.scanImg.frame = CGRectMake(60, 20, 680, 350);
-        self.imgLogo.frame = CGRectMake(0, 20, 56, 40);
-        sideSlider.frame = CGRectMake(18,130,20, 235);
-        self.btnFrozen.frame = CGRectMake(0, 68, 56, 56);
-        self.lableLine.frame = CGRectMake(0, 62, 60, 1);
+        self.scanImg.frame = CGRectMake(0, 20, 680, 350);
+        self.imgLogo.frame = CGRectMake(680, 20, 56, 40);
+        sideSlider.frame = CGRectMake(698,130,20, 235);
+        self.btnFrozen.frame = CGRectMake(680, 68, 56, 56);
+        self.lableLine.frame = CGRectMake(680, 62, 60, 1);
     }
 }
 
@@ -1622,6 +1639,8 @@
      */
 }
 
+
+
 -(void)swicthTheAdvance:(UISwitch*)sw{
     
     if (sw.isOn) {
@@ -1634,22 +1653,33 @@
 
 // Mark pickerViewDelegate
 
+
+
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
     return 13;
 }
+
+
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
     return 1;
 }
 
+
+
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
     return [channelList objectAtIndex:row];
 }
+
+
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     selectIndex = row;
     //[pickerView viewForRow:row forComponent:component].backgroundColor = [UIColor greenColor];
     [pickerView reloadComponent:0];
 }
+
+
+
 
 -(UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view{
     
@@ -1707,6 +1737,8 @@
 
 
 
+
+
 -(void)clickcloseButton:(UIButton*)btn{
     [temView removeFromSuperview];
     
@@ -1715,6 +1747,9 @@
     
 }
 
+
+
+
 -(void)drawRunning:(BOOL)running {
     if (running) {
         labelFrozen.text = NSLocalizedString(@"LIVE",nil);
@@ -1722,6 +1757,9 @@
         labelFrozen.text = NSLocalizedString(@"FREEZE",nil);
     }
 }
+
+
+
 
 -(void)drawImage:(RawImag*)raw runing:(BOOL)running{
     //  调节状态
@@ -1951,6 +1989,8 @@
     }
 }
 
+
+
 -(void) disableAutoLock
 {
     if (autoLockTimer != nil) {
@@ -1960,6 +2000,9 @@
     autoLockTimer = [NSTimer scheduledTimerWithTimeInterval:60*15 target:self selector:@selector(checkEnableAutoLock) userInfo:nil repeats:NO];
 }
 
+
+
+
 -(void) checkEnableAutoLock
 {
     if (autoLockTimer != nil) {
@@ -1967,6 +2010,9 @@
     }
     [UIApplication sharedApplication].idleTimerDisabled = NO;
 }
+
+
+
 
 -(void) nullImageRefresh
 {
@@ -1982,6 +2028,9 @@
         [nullImgTimer invalidate];
     }
 }
+
+
+
 
 -(void)clickSetGama:(UIButton*)btn{
     NSString* strgama = gamaTF.text;
@@ -2001,6 +2050,9 @@
     [self disableAutoLock];
     
 }
+
+
+
 
 -(UIImage*)InitGradientImage {
     
@@ -2049,6 +2101,10 @@
     
     return img;
 }
+
+
+
+
 
 -(NSString*)getDeviceVersion{
     

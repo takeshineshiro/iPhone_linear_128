@@ -64,7 +64,6 @@
 		E01693EF1BFDC95600C9E06A /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E01693EE1BFDC95600C9E06A /* AsyncSocket.m */; };
 		E01693F31BFEAFE800C9E06A /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = E01693F21BFEAFE800C9E06A /* ALAssetsLibrary+CustomPhotoAlbum.m */; };
 		E01693F81BFEB19F00C9E06A /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E01693F71BFEB19F00C9E06A /* ViewController.mm */; };
-		E01693FA1BFEB62F00C9E06A /* lepu.png in Resources */ = {isa = PBXBuildFile; fileRef = E01693F91BFEB62F00C9E06A /* lepu.png */; };
 		E01693FC1BFEB72C00C9E06A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E01693FB1BFEB72C00C9E06A /* AssetsLibrary.framework */; };
 		E01693FF1BFEB7BF00C9E06A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E01693FE1BFEB7BF00C9E06A /* CFNetwork.framework */; };
 		E01694011BFEB80100C9E06A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E01694001BFEB80100C9E06A /* SystemConfiguration.framework */; };
@@ -172,7 +171,6 @@
 		E01693F21BFEAFE800C9E06A /* ALAssetsLibrary+CustomPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsLibrary+CustomPhotoAlbum.m"; sourceTree = "<group>"; };
 		E01693F61BFEB19F00C9E06A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E01693F71BFEB19F00C9E06A /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
-		E01693F91BFEB62F00C9E06A /* lepu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lepu.png; sourceTree = "<group>"; };
 		E01693FB1BFEB72C00C9E06A /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		E01693FE1BFEB7BF00C9E06A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		E01694001BFEB80100C9E06A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -282,7 +280,6 @@
 				E01694041BFEB84B00C9E06A /* localize */,
 				E016935D1BFDC11900C9E06A /* Info.plist */,
 				E016934A1BFDC11900C9E06A /* main.m */,
-				E01693F91BFEB62F00C9E06A /* lepu.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -516,6 +513,7 @@
 					E01693451BFDC11900C9E06A = {
 						CreatedOnToolsVersion = 7.0.1;
 						DevelopmentTeam = D8NM8NBC9C;
+						ProvisioningStyle = Automatic;
 					};
 					E01693611BFDC11900C9E06A = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -565,7 +563,6 @@
 				E01693E11BFDC8A800C9E06A /* btn_下一个_dis.png in Resources */,
 				E01693E51BFDC8A800C9E06A /* btn_暂停_pre.png in Resources */,
 				E016935C1BFDC11900C9E06A /* LaunchScreen.storyboard in Resources */,
-				E01693FA1BFEB62F00C9E06A /* lepu.png in Resources */,
 				E05BE63E1C02A42E00962B13 /* InfoPlist.strings in Resources */,
 				E01693E21BFDC8A800C9E06A /* btn_下一个_nor.png in Resources */,
 				E01693E61BFDC8A800C9E06A /* icon_无线信号@2x.png in Resources */,
@@ -841,6 +838,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = D8NM8NBC9C;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/wireless_scan_B_mode",
@@ -864,6 +862,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = D8NM8NBC9C;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/wireless_scan_B_mode",
